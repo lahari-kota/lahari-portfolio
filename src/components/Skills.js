@@ -9,7 +9,7 @@ function Skills() {
           <hr className="underline"></hr>
         </div>
       </div>
-      <div className="listof-skills-container">
+      <div className="listof-skills-container wrapper">
         <div className="skills-card">
           <div className="skills-card-center">
             <h3 className="heading-container">Web Technologies</h3>

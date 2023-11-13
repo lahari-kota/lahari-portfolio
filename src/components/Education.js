@@ -7,7 +7,7 @@ function Education() {
       <div className="education-container-center-main">
         <h3 className="heading">Education</h3>
         <hr className="underline"></hr>
-        <div className="listof-education-containers">
+        <div className="listof-education-containers wrapper">
           <div className="education-container">
             <div className="big-image-container">
               <img
