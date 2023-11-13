@@ -582,13 +582,14 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 100px;
+  gap: 30px;
   align-items: center;
   justify-content: center;
 }
 @media screen and (min-width: 992px) {
   .about-container-center {
     grid-template-columns: 1fr 1fr;
+    gap: 100px;
   }
 }
 
@@ -599,7 +600,16 @@ body {
   font-weight: 700;
   font-size: 50px;
   margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
 }
+
+@media screen and (min-width: 992px) {
+  .about-container-center .left-side-container .name {
+    text-align: left;
+  }
+}
+
 .about-container-center .left-side-container .my-name {
   font-family: "Kaushan Script", cursive;
   color: #57c1c1;
@@ -612,6 +622,13 @@ body {
   color: #324d67;
   letter-spacing: 2px;
   font-size: 15px;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .about-container-center .left-side-container .about-me {
+    text-align: left;
+  }
 }
 .about-container-center .right-side-container {
   width: 100%;
@@ -636,6 +653,14 @@ body {
   cursor: pointer;
   transition: all 2s linear;
   margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 992px) {
+  .about-container-center .left-side-container .about-btn {
+    margin-left: 0px;
+  }
 }
 
 .about-container-center .left-side-container .about-btn:hover {
@@ -1150,7 +1175,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 100px;
+  gap: 30px;
   height: 100%;
   /* align-items: center;
   justify-content: center; */
@@ -1158,6 +1183,7 @@ body {
 @media screen and (min-width: 992px) {
   .experience-container-center-exp {
     grid-template-columns: 200px 1fr;
+    gap: 100px;
   }
 }
 
@@ -1176,6 +1202,15 @@ body {
   text-transform: capitalize;
   background-color: white;
   border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .experience-container-center-exp .leftside-container .exp-btn {
+    margin-left: 0px;
+  }
 }
 
 .experience-container-center-exp .rightside-container {
@@ -1188,6 +1223,13 @@ body {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 2px;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .experience-container-center-exp .rightside-container .exp-role {
+    text-align: left;
+  }
 }
 .experience-container-center-exp .rightside-container .exp-company {
   color: white;
@@ -1202,8 +1244,17 @@ body {
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
+
 .experience-container-center-exp .rightside-container .exp-company botton {
   font-size: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 992px) {
+  .experience-container-center-exp .rightside-container .exp-company botton {
+    margin-left: 0px;
+  }
 }
 .experience-container-center-exp .rightside-container .date {
   font-size: 20px;
