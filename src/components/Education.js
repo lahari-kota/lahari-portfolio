@@ -48,7 +48,7 @@ function Education() {
                 alt="college"
               />
               <div className="round-percentage">
-                <h1>80.5%</h1>
+                <h1>70.1%</h1>
               </div>
             </div>
             <div className="education-container-center">
@@ -81,7 +81,7 @@ function Education() {
                 alt="college"
               />
               <div className="round-percentage">
-                <h1>80.5%</h1>
+                <h1>98%</h1>
               </div>
             </div>
             <div className="education-container-center">
