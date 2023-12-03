@@ -138,4 +138,17 @@ export default [
     description:
       "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
   },
+  {
+    id: "11",
+    projectName: "Customers App",
+    url: "https://lahari-customers.netlify.app/",
+    thumbnail:
+      "https://plus.unsplash.com/premium_photo-1661777265048-4a846cf53a59?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "react",
+    technologies: ["html", "css", "javascript", "react"],
+    gitUrl: "https://github.com/lahari-kota/customers-app",
+    featured: true,
+    description:
+      "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+  },
 ];
