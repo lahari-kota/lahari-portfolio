@@ -23,7 +23,7 @@ function Projects({
         <div className="listof-projects-container">
           {projectData.map((eachProject) => {
             return (
-              <div className="card-container">
+              <div key={eachProject.id} className="card-container">
                 <div className="card-container-center">
                   <div className="image-container">
                     <img src={eachProject.thumbnail} alt="" className="src" />
@@ -33,8 +33,12 @@ function Projects({
                       {eachProject.projectName}
                     </h3>
                     <div className="tech-container">
-                      {eachProject.technologies.map((eachTech) => {
-                        return <button className="each-btn">{eachTech}</button>;
+                      {eachProject.technologies.map((eachTech, index) => {
+                        return (
+                          <button key={index} className="each-btn">
+                            {eachTech}
+                          </button>
+                        );
                       })}
                     </div>
                     <div className="link-icon-container">

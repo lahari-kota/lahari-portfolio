@@ -6,11 +6,24 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectPage from "./pages/ProjectPage";
 import { Route, Routes } from "react-router-dom";
+import { useState } from "react";
+import Sidebar from "./components/Sidebar";
 
 function App() {
+  const [showSidebar, setShowSidebar] = useState(false);
+
+  const openSidebar = () => {
+    setShowSidebar(true);
+  };
+
+  const closeSidebar = () => {
+    setShowSidebar(false);
+  };
+
   return (
     <div>
-      <Navbar />
+      <Sidebar closeSidebar={closeSidebar} showSidebar={showSidebar} />
+      <Navbar openSidebar={openSidebar} />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<AboutPage />}></Route>

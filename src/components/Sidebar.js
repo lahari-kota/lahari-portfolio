@@ -1,18 +1,25 @@
 import React from "react";
-import logo from "../assets/graduation-cap-solid.svg";
+import logo from "./../assets/graduation-cap-solid.svg";
 import { NavLink } from "react-router-dom";
 import { navLinks } from "../utils/common";
-import { PiListLight, PiListPlusLight } from "react-icons/pi";
+import { RxCross2 } from "react-icons/rx";
 
-function Navbar({ openSidebar }) {
+const Sidebar = ({ showSidebar, closeSidebar }) => {
   return (
-    <div className="nav-container">
-      <div className="nav-container-center">
-        <div className="image-container">
-          <img src={logo} alt="" className="src" />
+    <div className={`sidebar-container ${showSidebar ? "opened-sidebar" : ""}`}>
+      <div className="sidebar-container-center">
+        <div className="sidebar-header">
+          <div className="image-container">
+            <img src={logo} alt="" className="src" />
+          </div>
+          <div className="sidebar-close-icon">
+            <button onClick={closeSidebar}>
+              <RxCross2 />
+            </button>
+          </div>
         </div>
 
-        <div className="links-container">
+        <div className="sidebar-links-container">
           <ul>
             {navLinks.map((eachLink) => {
               const { id, title, path } = eachLink;
@@ -22,6 +29,7 @@ function Navbar({ openSidebar }) {
                   className={({ isActive }) =>
                     isActive ? "links active" : "links"
                   }
+                  onClick={closeSidebar}
                   to={path}
                 >
                   {title}
@@ -62,14 +70,9 @@ function Navbar({ openSidebar }) {
             </NavLink> */}
           </ul>
         </div>
-        <div className="sidebar-open-icon">
-          <button onClick={openSidebar}>
-            <PiListPlusLight />
-          </button>
-        </div>
       </div>
     </div>
   );
-}
+};
 
-export default Navbar;
+export default Sidebar;
